@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="co.edu.uniquindio.poo.cinemauq.viewController.PrimaryController"
+      alignment="CENTER" spacing="10.0" prefWidth="520.0" prefHeight="600.0">
+    <padding>
+        <Insets top="25.0" right="25.0" bottom="25.0" left="25.0"/>
+    </padding>
+    <Label text="CINEMAUQ"/>
+    <Label text="Sistema de gestión de cinema"/>
+    <Separator prefWidth="340.0"/>
+    <VBox spacing="6.0" prefWidth="340.0">
+        <Button text="Venta de entrada" maxWidth="Infinity" onAction="#onVenta"/>
+        <Button text="Cancelar venta" maxWidth="Infinity" onAction="#onCancelarVenta"/>
+        <Button text="Consultar películas" maxWidth="Infinity" onAction="#onConsultarPeliculas"/>
+        <Button text="Consultar funciones" maxWidth="Infinity" onAction="#onConsultarFunciones"/>
+        <Button text="Consultar disponibilidad" maxWidth="Infinity" onAction="#onDisponibilidad"/>
+        <Button text="Administrar películas" maxWidth="Infinity" onAction="#onAdministrarPeliculas"/>
+        <Button text="Administrar funciones" maxWidth="Infinity" onAction="#onAdministrarFunciones"/>
+        <Button text="Administrar salas" maxWidth="Infinity" onAction="#onAdministrarSalas"/>
+        <Button text="Administrar clientes" maxWidth="Infinity" onAction="#onAdministrarClientes"/>
+        <Button text="Generar reportes" maxWidth="Infinity" onAction="#onReportes"/>
+    </VBox>
+    <Separator prefWidth="340.0"/>
+    <Button text="Salir" maxWidth="340.0" onAction="#onSalir"/>
+</VBox>
